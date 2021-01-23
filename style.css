@@ -24,7 +24,6 @@ img{
 }
 aside{
     color: #222529;
-    /*text-shadow: 2px 2px 5px #e5e9f0;*/
     font-family: century-gothic;
 }
 aside p{
@@ -35,24 +34,29 @@ aside p{
     border-radius: 30px;
     background-color: #222529;
     opacity: 95%;
+    box-shadow: 6px 6px 20px rgb(60, 60, 60);
 }
 
 /* --------------------------------------------------- NAV ----------------------------------------------------- */
-#grifamenu{
-    font-family: century-gothic;
-    font-size: 1.3em;
-    font-weight: bold;
-    letter-spacing: 5px;
+nav a:hover,
+nav .active{
+    color: #d3a786;
 }
+/* -------------- */
+/*#grifamenu{
+    font-family: century-gothic;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 5px; 
+}*/
 nav{
-    padding: 5px;
+    padding: 2vh;
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     background-color: #222529;
     z-index: 1000;
-
 }
 
 .wide ul{
@@ -66,22 +70,20 @@ nav{
 nav li{
     display: inline-block;
     list-style: none;
+    font-size: 1rem;
 }
 
 nav a{
     text-decoration: none;
     color: #fff8df;
 } 
-
 /* --------------------------------------------------- BANNER ----------------------------------------------------- */
-
 .wide aside{
     text-align: center;
     margin-top: 90px;
 }
 
-#banner h1{  /* 1.5 em e -1.5 em per correggere il letterspacing*/
-
+#banner h1{
     font-size: 2rem;
     letter-spacing: 1.5em;
     margin-left: 1.5em;
@@ -93,9 +95,7 @@ nav a{
     letter-spacing: 5px;
     margin-left: 5px;
 }
-
 /* --------------------------------------------------- CARD 1 ----------------------------------------------------- */
-
 .card1 h2{
     padding: 30px 30px 10px 30px;
 }
@@ -105,36 +105,16 @@ nav a{
     padding: 0px 30px 0px 30px;
 }
 
-
 .card1 h5{
     padding: 0px 30px 10px 30px;
     font-size: 1.2rem;
 }
-
 
 .card1 a{
     text-decoration: none;
     color: #222529;
     font-weight: 700;
 }
-
-/*.animali{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.imgmucca, .infomucca{
-    padding: 20px;
-}
-.imgmucca{
-    width: 60%;
-}
-.infomucca ul{
-    list-style: none;
-}
-.infomucca li{
-    margin-bottom: 10px;
-}*/
 
 .animali{
     display: grid;
@@ -146,13 +126,8 @@ nav a{
     justify-items: left;
 }
 .imgmucca, .imggrillo{
-    padding: 30px; /*questo serve per reoglare le dimensioni delle immagini della mucca e del grillo: più padding metti e più si rimpiccioliscono */
+    padding: 30px;
 }
-/*.imgmucca {
-    border-radius: 50%;
-    background-color: #fff;
-  }
-*/
 .imgmucca img{
     grid-column-start: 1;
     grid-column-end: 2;
@@ -193,7 +168,12 @@ nav a{
     margin-bottom: 0px;
     padding: 0px 10px;
     font-family: century-gothic;
-    font-weight: bold;
+    font-weight: bold;  
+}
+
+.card1 .scopri a{
+    text-decoration: none;
+    color: #fff8df;
 }
 #pulsante1, #pulsante2{
     width: 10%;
@@ -204,7 +184,6 @@ nav a{
     padding: 0px 20px;
 }
 .card2{
-    
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -222,10 +201,16 @@ nav a{
 .card2 .scopri{
     margin-top: 50px;
 }
-/* --------------------------------------------------- CARD 3 ----------------------------------------------------- */
 
+.card2 .scopri a{
+    text-decoration: none;
+    color: #fff8df;
+}
+
+
+
+/* --------------------------------------------------- CARD 3 ----------------------------------------------------- */
 .card3{
-    /*background-color: #e9dac0;*/
     text-align: left;
 }
 
@@ -269,20 +254,9 @@ nav a{
     margin-bottom: 10px;
 }
 .descrizione h4{
-    margin: 0px 30px 10px 30px;
-    
-}
-/*#crostata{
-    max-width: 45%;
-    position: absolute;
-    margin-top: 15px;
+    margin: 0px 30px 10px 30px;   
 }
 
-#ingredienti{
-    text-align: left;
-    padding: 20px 20px 0px 20px;
-}
-*/
 .crostata #ingredienti{
     text-align: left;
 }
@@ -296,10 +270,7 @@ nav a{
     color: #222529;
     font-weight: 700;
 }
-
 /* --------------------------------------------------- CARD 4 ----------------------------------------------------- */
-
-
 .card4-maintesto{
     text-align: center;
     padding: 30px 0px 30px 0px;
@@ -329,9 +300,11 @@ nav a{
     padding-bottom: 30px;
 }
 /* --------------------------------------------------- FOOTER ----------------------------------------------------- */
+
 .wide-footer{
     background-color: #222529;
-}
+} 
+
 footer{
     display: flex;
     justify-content: center;
@@ -343,6 +316,7 @@ footer{
 footer .info{
     display: flex;
     font-size: .6rem;
+    align-items: center;
 }
 
 footer .info a{
@@ -375,6 +349,7 @@ footer #info1, #info2{
         font-size: 1.2em;
         line-height: 1.4em;
     }
+
     h1, h2, h3, h4, h5{
         font-size: 2em;
     }    
@@ -385,32 +360,26 @@ footer #info1, #info2{
         margin-bottom: 50px;
         border-radius: 70px;
     }
-
     /*  --------- NAV -------------- */
     nav{
         display: flex;
         align-items: center;
         justify-content: space-around;
-       
     }
-
-    /*nav li{
-        display: inline-block;
-        list-style: none;
-        margin: 10px 0px 0px 25px;
-        padding: 0px 40px 0px 40px;
-        
-    } */
 
     .wide ul{
         display: flex;
         justify-content: center;
         align-items: center;
-        
     }
+
     .wide a{
         padding: 0px 50px;
         text-transform: uppercase;
+    }
+
+    #banner{
+        margin-top: 120px;
     }
 
     #banner h1{
@@ -443,8 +412,10 @@ footer #info1, #info2{
         padding-bottom:40px;
     }
     .scopri p{
-        padding: 0px 10px;
+        padding: 0px 20px;
         text-transform: uppercase;
+        cursor: pointer;
+        color: #fff8df;
     }
     .imgmucca img, .imggrillo img{
         transition: all .5s;
@@ -494,12 +465,13 @@ footer #info1, #info2{
         transition: all 0.5s ease;
     }
     .card1 #pulsante1 img:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     /* ------------- CARD 2 ---------------- */
     .plch p{
         padding: 0px 50px;
     }
+
     .plch-main{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -513,6 +485,7 @@ footer #info1, #info2{
     .card2 h3{
         font-size: 1.5rem;
     }
+
     .card2 h4{
         margin-top: 20px;
         font-size: 1.5rem;
@@ -522,99 +495,99 @@ footer #info1, #info2{
     .card2 .scopri{
         padding-bottom: 40px;
     }
+
+    .card2 .scopri a{
+        text-decoration: none;
+    }
+
+    .card2 .scopri p{
+        padding: 0px 10px;
+    }
+
     .card2 img{
         transition: all 0.5s ease;
     }
+
     .card2 img:hover{
         transform: scale(1.05);
     }
+
+    .card2 #pulsante2 img{
+        transition: all 0.5s ease;
+    }
+    .card2 #pulsante2 img:hover{
+        transform: scale(1.1);
+    }
+
     /* ------------- CARD 3 ---------------- */
     .card3 h2{
         padding-top: 50px;
     }
+
     .card3 h3{
         font-size: 1.5rem;
     }
+
     .crostataimg img{
         float: right;
         width: 65%;
     }
+
     .crostataimg{
         padding-right: 0px;
     }
+
     .crostata{
         padding-left: 40px;
         justify-self: left;
     }
+
     .crostata h4, .descrizione h4{
         font-size: 1.5em;
     }
+
     .descrizione h4{
         padding-left: 60px;
         margin-left: 0px;
     }
+
     #ingredienti{
         padding-right: 60px;
     }
+
     #preparazione{
         text-align: left;
         padding: 0px 60px 50px 60px;
     }
-    
     /* ------------- CARD 4 ---------------- */
-    
     .card4-maintesto{
         padding-top: 50px;
     }
+
     .card4 h4{
         font-size: 2rem;
     }
+
     .card4 p{
         padding: 0px 60px 30px 60px;
     }
+
     .festival img{
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
+        max-width: 100%;
     }
+
     .festival{
         padding-bottom: 50px;
     }
-    /* ---------- FOOTER ---------- */
-
-    footer{
-        padding-top: 20px;
-    }
-    footer .info{
-        font-size: 1rem;
-    }
-    
-    footer .info a{
-        color: #d3a786;
-
-    }
-
-    footer #info1, #info2{
-        padding: 0px 50px 0px 50px;
-    }
-
-    .footer-disclaimer{
-        padding-top: 20px;
-    }
 }
-
-/* ----------- IL NOSTRO PRODOTTO --------------- */
-
 /*--------------------- PAGINA PRODOTTI--------------------*/
-
 /*---------------- NAV BAR ---------------------*/
-
 #grifaa{
     font-family:century-gothic;
     letter-spacing: 1em;
 }
-
-
 /*BOX 0*/
 .box0 h2{
     padding: 30px 30px 10px 30px;
@@ -630,32 +603,31 @@ footer #info1, #info2{
     font-weight: 700;
 }
 .box0{
-    margin: 30px 15px;
+    margin: 120px 15px 30px 15px;
     border-radius: 30px;
     background-color: #222529;
     opacity: 95%;
+    box-shadow: 6px 6px 20px rgb(60, 60, 60);
 }
 
 /*BOX---CSS COMUNE*/
 .box1 h2, .box2 h2, .box3 h2, .box4 h2{
     padding: 30px 30px 10px 30px;
 }
+
 .box1 p, .box2 p, .box3 p, .box4 p{
     margin-bottom: 20px;
     padding: 0px 30px 30px 30px;
 }
- .box1, .box2, .box3, .box4{
+
+.box1, .box2, .box3, .box4{
     margin: 30px 15px;
     border-radius: 30px;
     background-color: #222529;
     opacity: 95%;
-
-    
+    box-shadow: 6px 6px 20px rgb(60, 60, 60);
 }
-
-
 /*IMMAGINI FARINE*/
-
 .mondo {
     display: grid;
     grid-template-columns: 1.2fr 0.5fr 1fr;
@@ -666,12 +638,13 @@ footer #info1, #info2{
     padding-left: 30px;
 }
 #naz{
-width: 65%;
-margin: 20px 0px 20px 0px;
-justify-self: center;
+    width: 65%;
+    margin: 20px 0px 20px 0px;
+    justify-self: center;
 }
+
 #fv, #fb, #fc, #fck{
-margin-right: 20px;
+    margin-right: 20px;
 }
 
 .cerchio{
@@ -682,7 +655,6 @@ margin-right: 20px;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
-
 }
 .farinav img{
     display: block;
@@ -706,51 +678,9 @@ margin-right: 20px;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-
-
-
-
-/* --------------------------------------------------- FOOTER ----------------------------------------------------- */
-.wide-footer{
-    background-color: #222529;
-}
-/*footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 5vh;
-    width: 100%;
-}
-*/
-footer .info{
-    display: flex;
-    font-size: .6rem;
-}
-
-footer .info a{
-    text-decoration: none;
-    color: #d3a786;
-}
-
-footer .info p{
-    color: #fff8df ;
-}
-
-footer #info1, #info2{
-    padding: 0px 10px 0px 10px;
-}
-.footer-disclaimer{
-    padding: 10px 20px 30px 20px;
-    font-size: .6rem;
-    text-align: center;
-}
 /* --------------------------------- MEDIA QUERY > 800px ------------------------------------------------------*/
 
 @media (min-width: 800px){ 
-
-    /*------------------PAGINA PRODOTTO------------------*/
-
-
     /*BOX 0*/
     .box0{
     margin: auto;
@@ -775,7 +705,6 @@ footer #info1, #info2{
         background-color: #222529;
         opacity: 95%;
     }
-
 
     /*BOX---CSS COMUNE*/
     .box1 h2, .box2 h2, .box3 h2, .box4 h2{
@@ -819,14 +748,12 @@ footer #info1, #info2{
         margin-bottom: -5px;
     }
 
-
     /*-----GRIGLIA INTERNA--------*/
 
     .mondo {
         display: grid;
         grid-gap: 1rem;
         align-items: center;
-
     }
     .mondo {
         padding-left: 60px;
@@ -839,7 +766,6 @@ footer #info1, #info2{
         display: block;
         margin-left: 0;
         margin-right: auto;
-    
     }
 
     .cerchio{
@@ -857,7 +783,6 @@ footer #info1, #info2{
     #fv, #fb, #fc, #fck{
         margin-right: -10px;
         width: 100;
-
     }
 
     .farinav img{
@@ -873,7 +798,6 @@ footer #info1, #info2{
         grid-row-end: 2; 
     }
     .nazione{
-        
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 1;
@@ -881,7 +805,6 @@ footer #info1, #info2{
     }
 
     /*--------GRIGLIA PRINCIPALE-----*/
-
     .grigliax4 {
         display: grid;
         grid-gap: 1.2rem;
@@ -917,16 +840,11 @@ footer #info1, #info2{
     #footer-farine{
         margin-top: 50px;
     }
-
 }
-
 /* ---------------- CIBO DEL FUTURO ---------------- */
-
-/* ---------------- CARD 1 -------------------------- */
-
-
+/* ---------------- CARD 1 ------------------------- */
 #futuro{
-    margin-top: 80px;
+    margin-top: 120px;
 }
 
 #animalifuturo{
@@ -971,10 +889,8 @@ footer #info1, #info2{
     margin-left: auto;
     margin-right: auto;
 }
-
 /* ------------------------ CARD 2 --------------------- */
 #card2-h2{
-    
     text-align: left;
     padding-left: 30px;
 }
@@ -1033,43 +949,6 @@ footer #info1, #info2{
     padding-top: 40px;
 }
 
-/*#graph2, #graph3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-#graph2-icons{
-    max-width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding-right: 20px;
-}
-#graph2-icons img{
-    max-width: 90%;
-    display: inline-block; 
-    padding: 0px 0px 10px 0px;
-}*/
-/*#graph3-icons{
-    max-width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-right: 20px;
-}
-#graph3-icons img {
-    max-width: 90%;
-    display: inline-block; 
-    padding: 70px 0px 20px 0px;
-}
-#graph4-icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0px 50px 30px 50px;
-}*/
 #graph4-icons img{
     max-width: 30%;   
     display: inline-block; 
@@ -1090,24 +969,10 @@ footer #info1, #info2{
     padding: 0px 30px 30px 30px;
     grid-gap: 3rem;
 }
-/*
-.worldinsects{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-}
 
-.worldinsects div{
-    max-width: 25%;
-    text-align: center;
-}
-*/
 .worldinsects img{
     max-width: 60%;
 }
-
 /* --------------- MEDIA QUERY - CIBO FUTURO ----------------- */
 @media (min-width: 800px){ 
     /* ----------------------- CARD 1 ------------------ */
@@ -1123,7 +988,7 @@ footer #info1, #info2{
         align-items: center;
         justify-items: center;
     }
-    #animalifuturo .imgmucca img, #animalifuturo .imggrillo img{ /*CENTRARE L'IMMAGINE ALL'INTERNO DI UN DIV*/
+    #animalifuturo .imgmucca img, #animalifuturo .imggrillo img{ 
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -1164,36 +1029,11 @@ footer #info1, #info2{
     .card2 #card2-h2, #card2-sub, .grafici{
         padding: 0px 60px;
     }
-    /*
-    #graph2-icons{
-        max-width: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        padding-right: 20px;
-    }
-    #graph2-icons img{
-        max-width: 50%;
-        display: inline-block; 
-        padding: 0px 0px 10px 0px;
-    }*/
+
     #graph2-graph img, #graph3-graph img{
         max-width: 95%;
     }
-    /*#graph3-icons{
-        max-width: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        padding-right: 20px;
-    }
-    #graph3-icons img {
-        max-width: 50%;
-        display: inline-block; 
-        padding: 70px 0px 20px 0px;
-    }*/
+
     #graph4 img {
         display: block;
         margin-left: auto;
@@ -1223,33 +1063,22 @@ footer #info1, #info2{
         transform: scale(1.05);
     }
 }
-
-/* --------------- FINE FUTURO ---------------- */
-
-/* --------------- CHI SIAMO ------------------ */
-
-
-/* --------------------------------- NAV -------------------------------- */
-
-nav a:hover,
-nav .active{
-    color: #d3a786;
-}
-
-/* --------------------------------- CARDS -------------------------------- */
-
-.container-azienda{
+/* ------------------------------ CHI SIAMO ----------------------------- */
+/* --------------------------------- CARDS ------------------------------- */
+.container-azienda, .container{
     background-color: #222529;
     margin: 0px 15px;
     border-radius: 30px;
     opacity: 95%;
+    box-shadow: 6px 6px 20px rgb(60, 60, 60);
 }
 
-.container{
-    background-color: #222529;
-    margin: 30px 15px;
-    border-radius: 30px;
-    opacity: 95%;
+.container-azienda{
+    margin-top: 120px;
+}
+
+.container{ 
+    margin-top: 30px;
 }
 
 .card1-staff, .card2-staff, .sede-info{
@@ -1278,13 +1107,10 @@ nav .active{
     padding: 0px 30px 30px 30px;
     
 }
-
 /* -2- */
-
 .card2-staff h2{
     padding: 30px;
 }
-
 
 /* --------------------------------- Team RAG -------------------------------- */
 .img{
@@ -1313,9 +1139,7 @@ nav .active{
 #gp{  /* p con margin-bot 0 per il New Entry*/
     margin-bottom: 0px;
 }
-
 /* --------------------------------- SEDE -------------------------------- */
-
 .sede-info h2{
     padding: 30px 0px 15px 30px;
 }
@@ -1348,58 +1172,32 @@ nav .active{
 }
 
 /* --------------------------------- FOOTER -------------------------------- */
-.wide-footer{
+.wide-stafffooter{
     background-color: #222529;
-}
-
-/*footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 6vh;
-    width: 100%;
-}
-*/
-footer .info{
-    display: flex;
-    font-size: .6rem;
-}
-
-footer .info a{
-    text-decoration: none;
-    color: #d3a786;
-}
-
-footer .info p{
-    color: #fff8df;
-    font-size: .7rem;
-}
-
-footer #info1, #info2{
-    padding: 0px 10px 0px 10px;
+    margin-top: 30px;
 }
 
 .p-foot{
-    font-size: .5rem;
+    padding: 20px 30px;
+    font-size: .6rem;
     text-align: center;
 }
-
-/* -------------------------------- MEDIA QUARY > 800px -------------------------------- */
+/* -------------------------------- MEDIA QUERY > 800px -------------------------------- */
 
 @media (min-width: 800px){
-
     /* -------------------------------- CARDS -------------------------------- */
-
     .container-azienda, .container{
         width: 50%;
         margin: auto;
-        margin-top: 50px;
         margin-bottom: 50px;
         border-radius: 70px;
     }
 
+    .container-azienda{
+        margin-top: -20px;
+    }
+
     .camion{
-        
         margin: auto; 
     }
 
@@ -1498,4 +1296,13 @@ footer #info1, #info2{
         font-size: .8rem;
         margin-bottom: 10px;
     }
+}
+
+/* Nascondere l'active in mobile */
+
+@media (max-width: 800px){
+
+    /* nav .active{
+        display: none;
+    } */
 }
