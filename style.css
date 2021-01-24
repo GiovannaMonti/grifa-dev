@@ -32,8 +32,48 @@ aside p{
 .card1 , .card2, .card3, .card4{
     margin: 30px 15px;
     border-radius: 30px;
-    background-color: #222529;
-    opacity: 95%;
+
+    background: hsla(214, 9%, 15%, 1);
+
+    background: linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    background: -moz-linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    background: -webkit-linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#222529", endColorstr="#25282B", GradientType=1 );
+
+    /*background: hsla(0, 0%, 9%, 1);
+
+background: linear-gradient(135deg, hsla(0, 0%, 9%, 1) 0%, hsla(0, 0%, 15%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(0, 0%, 14%, 1) 65%, hsla(0, 0%, 9%, 1) 100%);
+
+background: -moz-linear-gradient(135deg, hsla(0, 0%, 9%, 1) 0%, hsla(0, 0%, 15%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(0, 0%, 14%, 1) 65%, hsla(0, 0%, 9%, 1) 100%);
+
+background: -webkit-linear-gradient(135deg, hsla(0, 0%, 9%, 1) 0%, hsla(0, 0%, 15%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(0, 0%, 14%, 1) 65%, hsla(0, 0%, 9%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#181818", endColorstr="#252525", GradientType=1 ); */
+
+    /*background: hsla(0, 0%, 9%, 1);
+
+background: linear-gradient(135deg, hsla(0, 0%, 9%, 1) 0%, hsla(0, 0%, 19%, 1) 50%, hsla(0, 0%, 9%, 1) 100%);
+
+background: -moz-linear-gradient(135deg, hsla(0, 0%, 9%, 1) 0%, hsla(0, 0%, 19%, 1) 50%, hsla(0, 0%, 9%, 1) 100%);
+
+background: -webkit-linear-gradient(135deg, hsla(0, 0%, 9%, 1) 0%, hsla(0, 0%, 19%, 1) 50%, hsla(0, 0%, 9%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#181818", endColorstr="#303030", GradientType=1 );
+   */ 
+    
+    /*background: hsla(0, 0%, 9%, 1);
+
+background: linear-gradient(90deg, hsla(0, 0%, 9%, 1) 0%, hsla(214, 9%, 15%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(0, 0%, 9%, 1) 0%, hsla(214, 9%, 15%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(0, 0%, 9%, 1) 0%, hsla(214, 9%, 15%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#181818", endColorstr="#222529", GradientType=1 );*/
+    
     box-shadow: 6px 6px 20px rgb(60, 60, 60);
 }
 
@@ -531,6 +571,10 @@ footer #info1, #info2{
     .crostataimg img{
         float: right;
         width: 65%;
+        transition: all 0.5s ease;
+    }
+    .crostataimg img:hover{
+        transform: scale(1.05);
     }
 
     .crostataimg{
@@ -576,18 +620,18 @@ footer #info1, #info2{
         display: block;
         margin: auto;
         max-width: 100%;
+        transition: all 0.5s ease;
     }
-
+    .festival img:hover{
+        transform: scale(1.05);
+    }
     .festival{
         padding-bottom: 50px;
     }
 }
 /*--------------------- PAGINA PRODOTTI--------------------*/
 /*---------------- NAV BAR ---------------------*/
-#grifaa{
-    font-family:century-gothic;
-    letter-spacing: 1em;
-}
+
 /*BOX 0*/
 .box0 h2{
     padding: 30px 30px 10px 30px;
@@ -605,8 +649,6 @@ footer #info1, #info2{
 .box0{
     margin: 120px 15px 30px 15px;
     border-radius: 30px;
-    background-color: #222529;
-    opacity: 95%;
     box-shadow: 6px 6px 20px rgb(60, 60, 60);
 }
 
@@ -623,9 +665,18 @@ footer #info1, #info2{
 .box1, .box2, .box3, .box4{
     margin: 30px 15px;
     border-radius: 30px;
-    background-color: #222529;
-    opacity: 95%;
     box-shadow: 6px 6px 20px rgb(60, 60, 60);
+}
+.box0, .box1, .box2, .box3, .box4, .box5{
+    background: hsla(214, 9%, 15%, 1);
+
+    background: linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    background: -moz-linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    background: -webkit-linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#222529", endColorstr="#25282B", GradientType=1 );
 }
 /*IMMAGINI FARINE*/
 .mondo {
@@ -701,10 +752,6 @@ footer #info1, #info2{
         color: #222529;
         font-weight: 700;
     }
-    .box0{
-        background-color: #222529;
-        opacity: 95%;
-    }
 
     /*BOX---CSS COMUNE*/
     .box1 h2, .box2 h2, .box3 h2, .box4 h2{
@@ -719,8 +766,6 @@ footer #info1, #info2{
         max-width: 70%;
         margin-bottom: 0px;
         border-radius: 70px;
-        background-color: #222529;
-        opacity: 95%;
         display: block;
     }
 
@@ -729,8 +774,7 @@ footer #info1, #info2{
         max-width: 70%;
         margin-top: 0px;
         border-radius: 70px;
-        background-color: #222529;
-        opacity: 95%;
+
         display: block;
     }
 
@@ -960,6 +1004,12 @@ footer #info1, #info2{
     padding-bottom: 30px;
 }
 /* ------------ CARD 3 -------------- */
+#card3-h2{
+    text-align: left;
+}
+#card3-sub{
+    padding: 0px 30px 30px 30px;
+}
 .worldinsects{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1020,13 +1070,13 @@ footer #info1, #info2{
     #card2-h2{
         text-align: center;
     }
-    .card2 #card2-h2, #card2-sub{
+    .card2 #card2-h2, #card2-sub, #card3-sub{
         margin-bottom: 20px;
     }
     .card2 .grafici img:hover{
         transform: scale(1.02);
     }
-    .card2 #card2-h2, #card2-sub, .grafici{
+    .card2 #card2-h2, #card2-sub, #card3-sub, .grafici{
         padding: 0px 60px;
     }
 
@@ -1044,17 +1094,14 @@ footer #info1, #info2{
     }
 
     /* ------------------ CARD 3 ------------------ */
-
+    #card3-h2{
+        padding-left: 60px;
+    }
     .mappamondo img{
         display: block;
         padding-top: 15px;
         margin-right: auto;
         margin-left: auto;
-    }
-    .worldinsects{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-        padding: 0px 60px 60px 60px;
     }
     .worldinsects img, .mappamondo img{
         transition: all 0.5s ease;
@@ -1063,13 +1110,28 @@ footer #info1, #info2{
         transform: scale(1.05);
     }
 }
+
+@media (min-width: 1400px){
+    .worldinsects{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        padding: 0px 60px 60px 60px;
+    }
+}
 /* ------------------------------ CHI SIAMO ----------------------------- */
 /* --------------------------------- CARDS ------------------------------- */
 .container-azienda, .container{
-    background-color: #222529;
+    background: hsla(214, 9%, 15%, 1);
+
+    background: linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    background: -moz-linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    background: -webkit-linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#222529", endColorstr="#25282B", GradientType=1 );
     margin: 0px 15px;
     border-radius: 30px;
-    opacity: 95%;
     box-shadow: 6px 6px 20px rgb(60, 60, 60);
 }
 
