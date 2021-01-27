@@ -4,10 +4,8 @@ body{
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
     color: #fff8df;
-    background-image: url(immagini/wood-bg-blurred.jpeg);
+    background: url(immagini/wood-bg-blurred.jpeg) no-repeat center center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 h1, h2, h3, h4, h5{
     font-family: century-gothic;
@@ -736,7 +734,7 @@ footer #info1, #info2{
     /*BOX 0*/
     .box0{
     margin: auto;
-    max-width: 70%;
+    max-width: 75%;
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 70px;
@@ -755,9 +753,9 @@ footer #info1, #info2{
     }
 
     /*BOX---CSS COMUNE*/
-    .box1, .box2, .box3, .box4{
+    /*.box1, .box2, .box3, .box4{
         min-height: 550px;
-    }
+    }*/
     .box1 h2, .box2 h2, .box3 h2, .box4 h2{
         padding: 50px 30px 0px 60px;
     }
@@ -768,7 +766,7 @@ footer #info1, #info2{
 
     .box1,  .box2 {
         margin: auto;
-        max-width: 70%;
+        max-width: 75%;
         margin-bottom: 0px;
         border-radius: 70px;
         display: block;
@@ -776,7 +774,7 @@ footer #info1, #info2{
 
     .box3,  .box4 {
         margin: auto;
-        max-width: 70%;
+        max-width: 75%;
         margin-top: 0px;
         border-radius: 70px;
 
@@ -819,8 +817,8 @@ footer #info1, #info2{
 
     .cerchio{
         display: inline-flex;
-        width: 10px;
-        height: 10px;
+        width: 8px;
+        height: 8px;
         background: #fff8df;
         -moz-border-radius: 50px;
         -webkit-border-radius: 50px;
@@ -1181,8 +1179,7 @@ footer #info1, #info2{
 
 /* --------------------------------- Team RAG -------------------------------- */
 .img{
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
     padding: 0px 30px;
 }
 .persona img{
@@ -1203,8 +1200,8 @@ footer #info1, #info2{
     padding: 10px 30px 50px 30px;
 }
 
-#gp{  /* p con margin-bot 0 per il New Entry*/
-    margin-bottom: 0px;
+#gp{  /* p con padding-bot 0 per il New Entry*/
+    padding-top: 0px;
 }
 /* --------------------------------- SEDE -------------------------------- */
 .sede-info h2{
