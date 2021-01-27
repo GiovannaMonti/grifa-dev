@@ -756,13 +756,14 @@ footer #info1, #info2{
 
     /*BOX---CSS COMUNE*/
     .box1, .box2, .box3, .box4{
-        min-height: 600px;
+        min-height: 550px;
     }
     .box1 h2, .box2 h2, .box3 h2, .box4 h2{
         padding: 50px 30px 0px 60px;
     }
     .box1 p, .box2 p, .box3 p, .box4 p{
         padding: 0px 50px 50px 60px;
+        margin-bottom: 0px;
     }
 
     .box1,  .box2 {
