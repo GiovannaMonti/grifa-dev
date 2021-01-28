@@ -40,37 +40,6 @@ aside p{
     background: -webkit-linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#222529", endColorstr="#25282B", GradientType=1 );
-
-    /*background: hsla(0, 0%, 9%, 1);
-
-background: linear-gradient(135deg, hsla(0, 0%, 9%, 1) 0%, hsla(0, 0%, 15%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(0, 0%, 14%, 1) 65%, hsla(0, 0%, 9%, 1) 100%);
-
-background: -moz-linear-gradient(135deg, hsla(0, 0%, 9%, 1) 0%, hsla(0, 0%, 15%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(0, 0%, 14%, 1) 65%, hsla(0, 0%, 9%, 1) 100%);
-
-background: -webkit-linear-gradient(135deg, hsla(0, 0%, 9%, 1) 0%, hsla(0, 0%, 15%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(0, 0%, 14%, 1) 65%, hsla(0, 0%, 9%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#181818", endColorstr="#252525", GradientType=1 ); */
-
-    /*background: hsla(0, 0%, 9%, 1);
-
-background: linear-gradient(135deg, hsla(0, 0%, 9%, 1) 0%, hsla(0, 0%, 19%, 1) 50%, hsla(0, 0%, 9%, 1) 100%);
-
-background: -moz-linear-gradient(135deg, hsla(0, 0%, 9%, 1) 0%, hsla(0, 0%, 19%, 1) 50%, hsla(0, 0%, 9%, 1) 100%);
-
-background: -webkit-linear-gradient(135deg, hsla(0, 0%, 9%, 1) 0%, hsla(0, 0%, 19%, 1) 50%, hsla(0, 0%, 9%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#181818", endColorstr="#303030", GradientType=1 );
-   */ 
-    
-    /*background: hsla(0, 0%, 9%, 1);
-
-background: linear-gradient(90deg, hsla(0, 0%, 9%, 1) 0%, hsla(214, 9%, 15%, 1) 100%);
-
-background: -moz-linear-gradient(90deg, hsla(0, 0%, 9%, 1) 0%, hsla(214, 9%, 15%, 1) 100%);
-
-background: -webkit-linear-gradient(90deg, hsla(0, 0%, 9%, 1) 0%, hsla(214, 9%, 15%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#181818", endColorstr="#222529", GradientType=1 );*/
     
     box-shadow: 6px 6px 20px rgb(60, 60, 60);
 }
@@ -80,13 +49,6 @@ nav a:hover,
 nav .active{
     color: #d3a786;
 }
-/* -------------- */
-/*#grifamenu{
-    font-family: century-gothic;
-    font-weight: bold;
-    font-size: 1rem;
-    letter-spacing: 5px; 
-}*/
 nav{
     padding: 2vh;
     overflow: hidden;
